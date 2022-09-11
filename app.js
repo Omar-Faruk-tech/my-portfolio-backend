@@ -28,8 +28,10 @@ app.use('/users', usersRouter);
 app.use('/response', responseRouter);
 
 const db = require('./Model/index');
-db.sequelize
-    .sync();
+// db.sequelize
+//     .sync({
+//       alter: true
+//     });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
